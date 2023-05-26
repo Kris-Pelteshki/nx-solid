@@ -4,10 +4,39 @@
   "license": "MIT",
   "scripts": {},
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "@nxext/solid": "^16.2.0",
+    "babel-preset-solid": "^1.7.4",
+    "solid-js": "^1.7.5"
+  },
   "devDependencies": {
+    "@nx/cypress": "16.2.2",
+    "@nx/eslint-plugin": "16.2.2",
+    "@nx/js": "16.2.2",
+    "@nx/linter": "16.2.2",
+    "@nx/vite": "16.2.2",
     "@nx/workspace": "16.2.2",
+    "@types/node": "16.11.7",
+    "@typescript-eslint/eslint-plugin": "^5.58.0",
+    "@typescript-eslint/parser": "^5.58.0",
+    "@vitest/coverage-c8": "^0.31.0",
+    "@vitest/ui": "^0.31.0",
+    "cypress": "^12.11.0",
+    "eslint": "~8.15.0",
+    "eslint-config-prettier": "8.1.0",
+    "eslint-plugin-cypress": "^2.10.3",
+    "eslint-plugin-solid": "0.12.1",
+    "jsdom": "~20.0.3",
     "nx": "16.2.2",
-    "nx-cloud": "latest"
+    "nx-cloud": "latest",
+    "prettier": "^2.6.2",
+    "solid-jest": "^0.2.0",
+    "solid-testing-library": "^0.5.1",
+    "typescript": "~5.0.2",
+    "vite": "^4.3.4",
+    "vite-plugin-eslint": "^1.8.1",
+    "vite-plugin-solid": "2.7.0",
+    "vite-tsconfig-paths": "^4.0.2",
+    "vitest": "^0.31.0"
   }
 }
