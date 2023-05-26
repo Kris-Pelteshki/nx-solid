@@ -4,7 +4,7 @@ import styles from './App.module.css';
 function App() {
   return (
     <div class={styles.App}>
-      <header class={styles.header}>
+      <header class={styles.header + ' bg-gradient-to-r from-green-900 to-blue-500'}>
         <img src={logo} class={styles.logo} alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
