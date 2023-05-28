@@ -1,26 +1,25 @@
-import logo from './logo.svg';
-import styles from './App.module.css';
-import { MyComponent } from './Test';
+import { Router, Routes, Route } from '@solidjs/router';
+import { AppRoutes } from '@nx-solid/solid-app/domain';
+
+import { Home } from './Home';
+import { Header } from './shell/Header';
+import { Footer } from './shell/Footer';
 
 function App() {
   return (
-    <div class={styles.App}>
-      <header class={styles.header + ' bg-gradient-to-r from-green-900 to-blue-500'}>
-        <img src={logo} class={styles.logo} alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <MyComponent />
-        <a
-          class={styles.link}
-          href="https://github.com/solidjs/solid"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn Solid
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header />
+
+      <main>
+        <Routes>
+          <Route path={AppRoutes.home} component={Home} />
+          <Route path={AppRoutes.about} component={Home} />
+          <Route path={AppRoutes.contact} component={Home} />
+        </Routes>
+      </main>
+
+      <Footer />
+    </Router>
   );
 }
 

@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@nx-solid/solid-app/domain": ["libs/solid-app/domain/src/index.ts"],
       "@undefined/solid-components": ["libs/solid-components/src/index.ts"]
     }
   },

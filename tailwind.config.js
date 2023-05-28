@@ -4,8 +4,14 @@ module.exports = {
     'apps/solid/src/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
-    extend: {},
-  },
-  plugins: [],
-}
+    extend: {
+      colors: {
+        primary: '#ea580c',
+        secondary: '#fed7aa',
+        tertiary: '#c084fc',
+      },
+    },
+    plugins: [],
+  }
+};
 
